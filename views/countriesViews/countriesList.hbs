@@ -1,0 +1,13 @@
+<h1>Countries List</h1>
+
+<div id="listOfCountries">
+  {{#each countries}}
+<a href="/country/{{this.alpha3Code}}">
+  <div class="eachCountry centerContent">
+    <h2>{{this.name}} ({{this.alpha3Code}})</h2>
+    <img class="flagImg" src="{{this.flag}}" alt="flag" />
+  </div>
+</a>
+
+  {{/each}}
+</div>
